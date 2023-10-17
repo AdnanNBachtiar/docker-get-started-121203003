@@ -17,6 +17,7 @@ def get_hit_count():
             retries -= 1
             time.sleep(0.5)
 
+// print
 @app.route('/')
 def hello():
     count = get_hit_count()
