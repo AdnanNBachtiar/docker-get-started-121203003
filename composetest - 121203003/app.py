@@ -1,5 +1,6 @@
 import time
 
+// impor redis
 import redis
 from flask import Flask
 
@@ -17,7 +18,7 @@ def get_hit_count():
             retries -= 1
             time.sleep(0.5)
 
-// print kalimat
+// prin kalimat
 @app.route('/')
 def hello():
     count = get_hit_count()
